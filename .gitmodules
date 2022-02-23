@@ -1,0 +1,6 @@
+[submodule "Microservice-auth"]
+	path = Microservice-auth
+	url = https://github.com/GabrielTBeserra/Microservice-auth
+[submodule "Microservice-product-management"]
+	path = Microservice-product-management
+	url = https://github.com/GabrielTBeserra/Microservice-product-management

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  getway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "80:5000"
+      - "81:5001"
+  auth-service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5001
+

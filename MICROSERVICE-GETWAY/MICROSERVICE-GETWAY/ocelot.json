@@ -1,0 +1,23 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "auth-service",
+                "Port": 5001
+              }
+            ],
+            "UpstreamPathTemplate": "/auth/{everything}",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post",
+                "Put",
+                "Delete",
+                "Options"
+            ]
+        }
+    ],
+    "GlobalConfiguration": {}
+}
